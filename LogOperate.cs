@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace FileConnect
 {
-    public class Log
+    public class LogOperate
     {
         private string _fileName; //ファイル名（絶対パスで指定する）
         private Boolean _isAppend; //true:追記モード、false:上書きモード（Writeメソッド、WriteLineメソッドで使用する）
@@ -16,7 +16,7 @@ namespace FileConnect
         /// <summary>
         /// インスタンス化を行います。
         /// </summary>
-        public Log()
+        public LogOperate()
         {
 
         }
@@ -27,7 +27,7 @@ namespace FileConnect
         /// <param name="fileName">ファイル名（絶対パスで指定する）</param>
         /// <param name="isAppend">true:追記モード、false:上書きモード</param>
         /// <param name="encoding">エンコーディング</param>
-        public Log(string fileName, Boolean isAppend, Encoding encoding)
+        public LogOperate(string fileName, Boolean isAppend, Encoding encoding)
         {
             _fileName = fileName;
             _isAppend = isAppend;
